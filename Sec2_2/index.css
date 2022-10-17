@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+*{
+  margin: 0;
+}
+
+.marquee {
+  width: 100vw;
+  padding: 0 100%; /* full-width */
+  margin: 0 -100%; /* full-width */
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  top: -50px;
+}
+
+.marquee-text {
+	display: inline-block;
+	animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+	0% {
+    transform: translateX(0); 
+  }
+	100% { 
+    transform: translateX(-100%); 
+  }
+}
+.marquee-text span {
+	display: inline-block;
+  font-size: 10rem;
+  color: #e1e1e1;
+  letter-spacing: .01em;
+  padding: .2em;
+}
+
+#fonttest{
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.content{
+  position: relative;
+  padding: 80px 0;
+  text-align: center;
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.hiddenimg {
+    display: none;
+  }
+  
+  .hiddentxt {
+    font-weight: bold;
+    color: gray;
+    z-index:99;
+  }
+  
+  .hiddentxt a {
+    color:gray;
+    text-decoration: none;
+    z-index: 99;
+  }
+  
+  .hiddenclick {
+    font-weight: bold;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .hiddenclick a {
+    color: gray;
+    text-decoration: none;
+  }
+  
+  .hiddenclick a:visited {
+    color: gray;
+    text-decoration: none;
+  }
+  
+  .hiddentxt:hover ~ .hiddenimg {
+    display: block;
+    position: absolute;
+      z-index: 2
+  }
+  
+  .hiddenclickimg {
+    display: none;
+  
+  }
