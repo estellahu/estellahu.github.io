@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps&display=swap');
+
+body, html {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* marquee styling */
+
+.marquee {
+  width: 100vw;
+  padding: 0 100%; /* full-width */
+  margin: 0 -100%; /* full-width */
+  overflow: hidden;
+  white-space: nowrap;
+  position: fixed;
+  top: -30px;
+  z-index: 99;
+}
+
+.marquee-text {
+	display: inline-block;
+	animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+	0% {
+    transform: translateX(0); 
+  }
+	100% { 
+    transform: translateX(-100%); 
+  }
+}
+.marquee-text span {
+	display: inline-block;
+  font-size: 10rem;
+  color: #e1e1e1;
+  letter-spacing: .01em;
+  padding: .2em;
+  font-family: 'Londrina Outline', cursive;
+}
+
+#title{
+  position: relative;
+  padding: 80px 0;
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-size:70px;
+}
+
+/* show inspiration star image */
+
+.hiddenimg {
+    display: none;
+    position: absolute;
+    top:50px;
+    left:450px;
+  }
+  
+  .hiddentxt {
+    font-weight: bold;
+    color: gray;
+    z-index:99;
+  }
+  
+  .hiddentxt a {
+    color:gray;
+    text-decoration: none;
+    z-index: 99;
+  }
+  
+  .hiddenclick {
+    font-weight: bold;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .hiddenclick a {
+    color: gray;
+    text-decoration: none;
+  }
+  
+  .hiddenclick a:visited {
+    color: gray;
+    text-decoration: none;
+  }
+  
+  .hiddentxt:hover ~ .hiddenimg {
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .hiddenclickimg {
+    display: none;
+  
+  }
+
+/* Page 1 styling */
+
+#cover1 {
+  width: 100vw;
+  height: 100vh;
+  /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/17/Westie_pups.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;*/
+}
+
+h3{
+  position: relative;
+  top:130px;
+  font-family: 'Homemade Apple', cursive;
+  color:#515557;
+  font-size:34px;
+}
+
+/* Scoll down animation */
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+  top:520px;
+}
+
+.arrows path {
+  stroke: #515557;
+  fill: transparent;
+  stroke-width: 1px;	
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; 
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; 
+}
+
+.arrows path.a3 {	
+  animation-delay:0s;
+  -webkit-animation-delay:0s; 
+}
+
+/* Left & right page*/
+
+#cover2 {
+  width: 100vw;
+  height: 100vh;
+  /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8a/Laitche-P013.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;*/
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 15px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightgray; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray; 
+}
+
+#leftcol {
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 10em;
+  width: 50vw;
+  height: 100vh;
+  float: left;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-size: cover;
+}
+
+.card-read{
+  position:sticky;
+  left:50px;
+  top:50px;
+  width: auto;
+}
+
+#rightcol {
+  font-family: 'EB Garamond', serif;
+  color: #ffffff;
+  font-size: 4em;
+  width: calc(50vw - 10px);
+  height: 100vh;
+  float: left;
+  background: linear-gradient(0deg, lightblue 0%, rgba(253,187,45,1) 100%);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#floatclear {
+  float: none;
+}
+
+@media screen and (max-width: 1000px) {
+  #leftcol {
+    width: 100vw;
+  }
+  #rightcol {
+    width: 100vw;
+    height: auto;
+    overflow-y: hidden;
+  }
+} 
+
+/* Don't delete */
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); /* find this font and more @ https://fonts.google.com/specimen/Special+Elite?category=Display,Handwriting */
+
+/* RESET */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  transition: all 300ms ease-in-out; /* save your typing hand --> applies smooth transition to all elements such as hover effects */
+}
+img {
+  max-width: 100%; /* keep those images in their containers where they belong */
+  max-height: 100%;
+}
+:root {
+  font-size: 10px; /* insures all fonts are not affected by browser presets and easy to convert to rem units | 18px = 1.8rem */
+  font-family: "Special Elite", serif;
+}
+
+/* Dark starry sky */
+
+#cover3 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://wallpapercave.com/wp/wp2682930.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Strayy backgound text animiation */
+.textWrpr {
+	width: 100%;
+	position: relative;
+  top:270px;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #111;
+  font-size: 28px;
+  color:#bbb;
+  font-family:'Homemade Apple', cursive;
+}
+.textWrpr > span:not(:last-child) {
+	padding-right: 5px;
+}
+.textWrpr span {
+	transition: 350ms linear;
+	transition-delay: var(--delay);
+}
+.textWrpr:hover span {
+	transform: rotateY(360deg);
+}
+
+/* Torat flip page */
+#cover4 {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1{
+  font-family: 'Homemade Apple', cursive;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  top:30px;
+}
+
+.container {
+  position:relative;
+  top:50px;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  max-width: 1320px;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin: 25px auto;
+  gap: 15px;}
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+}
+img{
+	width: 300px;
+	height: 300px;
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* front side  */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/*back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.read {
+  position:relative;
+  top:30px;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  max-width: 250px;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin: 25px auto;
+  gap: 100px;}
+
