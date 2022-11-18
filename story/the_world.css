@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body, html {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#cover1 {
+    width: 100vw;
+    height: 100vh;
+    background:whitesmoke;
+    /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/17/Westie_pups.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;*/
+}
+  
+h3{
+    position: absolute;
+    top:130px;
+    left:70px;
+    font-family: 'Homemade Apple', cursive;
+    color:#515557;
+    font-size:80px;
+ }
+
+ h7{
+    position: absolute;
+    top:210px;
+    left:610px;
+    font-family: 'Ma Shan Zheng', cursive;
+    color:#515557;
+    font-size:120px;
+ }
+
+ h4{
+    position: absolute;
+    top:420px;
+    left:70px;
+    font-family: 'Homemade Apple', cursive;
+    color:#515557;
+    font-size:30px;
+ }
+
+ h5{
+    position: absolute;
+    top:380px;
+    left:800px;
+    font-family:  'EB Garamond', serif;
+    color:#515557;
+    font-size:30px;
+ }
+
+ h6{
+    position: absolute;
+    top:450px;
+    left:800px;
+    font-family: 'Ma Shan Zheng', cursive;
+    color:#515557;
+    font-size:30px;
+ }
+
+ img{
+    position:absolute;
+    top:190px;
+    max-width: 90px;
+    left:900px;
+ }
+
+ #cover2 {
+    width: 100vw;
+    height: 100vh;
+    /*background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8a/Laitche-P013.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;*/
+}
+  
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: gray; 
+}
+  
+#leftcol {
+    font-family: 'EB Garamond', serif;
+    color: black;
+    font-size: 1.5em;
+    width: calc(50vw - 10px);
+    height: 100vh;
+    float: left;
+    background:whitesmoke;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+  
+ /* .card-read{
+    position:sticky;
+    left:50px;
+    top:50px;
+    width: auto;
+}
+   */
+
+#rightcol {
+    font-family: "KaiTi";
+    color: black;
+    font-size: 1.5em;
+    width: calc(50vw - 10px);
+    height: 100vh;
+    float: left;
+    background:whitesmoke;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+  
+#floatclear {
+    float: none;
+}
+  
+@media screen and (max-width: 1000px) {
+    #leftcol {
+      width: 100vw;
+    }
+    #rightcol {
+      width: 100vw;
+      height: auto;
+      overflow-y: hidden;
+    } 
+} 
