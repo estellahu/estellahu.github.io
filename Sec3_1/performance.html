@@ -82,6 +82,21 @@
         <button id="button2">Button For Reference Drawing</button>
         <div id="iframeHolder"></div>
         </div>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('#button3').click(function(){ 
+                if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe src="https://docs.google.com/document/d/e/2PACX-1vQX_wgpgJugssE4qDwzGf_e-r-oOgHlbUXUYPon5yW2usgx22A6OPjoY2eS3As4QQDGhkuWlvsZnNn6/pub?embedded=true" width="800" height="500"></iframe>');
+                }
+            });   
+            });
+        </script>
+ 
+        <button id="button3">Button For Instructor's Script</Script></button>
+        <div id="iframeHolder"></div>
+        </div>
         
 </body>
 
