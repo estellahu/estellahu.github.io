@@ -1,0 +1,58 @@
+html {
+    height:100%;
+    width:100%;
+    margin:0%;
+    padding:0%;
+    overflow-x: hidden;
+    /* background-color: black; */
+    background-image: url("https://images.pond5.com/retro-tv-white-noise-dark-090165820_prevstill.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* box-sizing: border-box;
+    text-decoration: none; */
+    /* font-family: "Ubuntu", sans-serif; */
+}
+
+canvas{
+    position:absolute;
+    top:280px;
+    left:410px;
+    max-width: 340px;
+    max-height: 240px;
+  /*   padding-left: calc(50vw - 360px);
+    padding-top: calc(50vw - 360px);
+    padding-bottom: calc(50vw - 360px); */
+}
+
+#preview {
+    background-image: url("daxiao.jpg");
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    top:10px;
+  }
+  
+.close{
+    position: absolute;
+    font-size: 50px;
+    top:200px;
+}
+  .close:hover ~ #preview {
+    background-image: url("daxiao.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.open{
+    position: absolute;
+    font-size: 50px;
+    top:200px;
+    right:10px;
+}
+  
+  .open:hover ~ #preview {
+    background-image: url("https://www.capsuleauctions.com/storage/app/uploads/public/622/4c3/806/thumb_109860_2000_0_0_0_auto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
