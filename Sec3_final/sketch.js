@@ -22,7 +22,7 @@ function draw(){
       stroke(color(c));
 
       strokeWeight(random(10));
-      rect(col,row,10,mouseY);
+      rect(col,row,10,1);
 
       // close the screen
 
