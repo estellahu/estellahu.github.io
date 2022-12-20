@@ -1,0 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+/*   padding-left: calc(50vw - 360px);
+  padding-top: calc(50vw - 360px);
+  padding-bottom: calc(50vw - 360px); */
+}
