@@ -235,63 +235,6 @@ h3{
   color:black;
 }
 
-/* social icon */
-.social-menu ul{
-  position: fixed;
-  top:20%;
-  left:80%;
-  padding: 0;
-  margin: 0;
-  transform: translate(-50%, -50%);
-  display: flex;
-  z-index: 4;
-}
-
-.social-menu ul li{
-  list-style: none;
-  margin: 0 15px;
-}
-
-.social-menu ul li .fab{
-  font-size: 25px;
-  line-height: 28px;
-  transition: .3s;
-  color: #000;
-}
-
-.social-menu ul li .fab:hover{
-  color: #fff;
-}
-
-.social-menu ul li a{
-  position: relative;
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #fff;
-  text-align: center;
-  transition: .6s;
-  box-shadow: 0 5px 4px rgba(0,0,0,.5);
-}
-
-.social-menu ul li a:hover{
-  transform: translate(0, -10%);
-}
-
-.social-menu ul li:nth-child(1) a:hover{
-  background-color: rgba(217, 167, 227, 0.829);
-}
-.social-menu ul li:nth-child(2) a:hover{
-  background-color: #E4405F;
-}
-.social-menu ul li:nth-child(3) a:hover{
-  background-color: #0077b5;
-}
-.social-menu ul li:nth-child(4) a:hover{
-  background-color: #000;
-}
-
 /* highlight */
 .highlight {
   background: rgba(235, 255, 51, 0.7);
