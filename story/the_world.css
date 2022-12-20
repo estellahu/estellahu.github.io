@@ -135,3 +135,9 @@ h3{
       overflow-y: hidden;
     } 
 } 
+
+.icon{
+    position: relative;
+    top:5%;
+    left:5%;
+}
