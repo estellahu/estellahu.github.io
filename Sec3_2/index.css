@@ -22,6 +22,14 @@ body {
   left:200px;
 }
 
+.icon2{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  z-index: 3;
+  left:80%;
+}
+
 h1{
   font-family: 'Noto Serif', serif;
   font-size:80px;
