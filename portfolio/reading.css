@@ -2,15 +2,16 @@
 
 body {
     overflow-x: hidden;
-    margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    /* margin: 0;
+  padding: 0; */
+  /* box-sizing: border-box; */
+  padding-top:100px;
   }
   
   canvas {
-    position:fixed;
+    position:absolute;
     top:10px;
-    left:30px;
+    left:40px;
     z-index: -2;
     max-width: 200px;
     max-height: 200px;
@@ -22,12 +23,11 @@ body {
   /* navigation bar */
   
   nav {
-    position: fixed;
+    position: absolute;
     top: 5%;
     left: 20px;
     width: 90%;
     padding: 20px;
-    transition: all 0.4s ease;
     z-index: 3;
   }
   nav.sticky {
@@ -52,6 +52,7 @@ body {
     font-weight: 500;
     font-size: 35px;
     color: #353842;
+    z-index: 3;
   }
   nav.sticky .logo a {
     color: #fff;
@@ -120,22 +121,6 @@ body {
     background-image:linear-gradient(lightgrey,rgb(168, 167, 167));
   }
   
-
-.imageroweven, .imagerowodd {
-    position: sticky;
-    top: 35%;
-    width: 100vw-5pc;
-    height: auto;
-}
-
-.imageroweven {
-    background-color: #ccc;
-}
-
-.imagerowodd {
-    background-color: #eee;
-}
-
 /* text show */
 
 .tab{
@@ -146,7 +131,7 @@ body {
     text-decoration: none;
     justify-content:space-between;
     font-family: 'Crimson Text', serif;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
 }
 
