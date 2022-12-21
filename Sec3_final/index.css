@@ -50,9 +50,17 @@ canvas{
     right:10px;
 }
   
-  .open:hover ~ #preview {
-    background-image: url("https://www.capsuleauctions.com/storage/app/uploads/public/622/4c3/806/thumb_109860_2000_0_0_0_auto.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
+.open:hover ~ #preview {
+  background-image: url("https://www.capsuleauctions.com/storage/app/uploads/public/622/4c3/806/thumb_109860_2000_0_0_0_auto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.icon{
+  position: relative;
+  top:80%;
+  left:1%;
+  width: 100px;
+  height: 100px;
+  z-index: 3;
+}
