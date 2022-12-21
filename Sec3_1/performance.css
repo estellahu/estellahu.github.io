@@ -213,3 +213,12 @@ h7{
   font-size: 30px;
   bottom:80px;
 }
+
+.icon{
+  position: relative;
+  top:20%;
+  left:5%;
+  width: 100px;
+  height: 100px;
+  z-index: 3;
+}
